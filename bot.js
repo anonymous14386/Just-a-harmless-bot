@@ -14,7 +14,7 @@ client.on("message", msg => {
   if (msg.author.bot) return;
 
   if (msg.content.toLowerCase() === prefix + "help") {
-    msg.reply("\n```Thank you for choosing me! Here is a basic help page:\n\n1. $avatar - Sends your profile pic\n\n2. $command2 - Sends a link to Song 2 by blur\n\n3. $hate - Sends a nice hate song\n\n4. $md5 - Sends the md5 hash of a string\n\n5. $define - Sends the urban dictionary definition of a word\n\n6. $geoip - Sends the geographical information for an IP address\n\n7. $btc - Sends the current exchange rate for 1 BTC```");
+    msg.reply("\n```Thank you for choosing me! Here is a basic help page:\n\n1. $avatar - Sends your profile pic\n\n2. $command2 - Sends a link to Song 2 by blur\n\n3. $md5 - Sends the md5 hash of a string\n\n4. $define - Sends the urban dictionary definition of a word\n\n5. $geoip - Sends the geographical information for an IP address\n\n6. $btc - Sends the current exchange rate for 1 BTC```");
   }
 
   if (msg.content.toLowerCase().startsWith(prefix + 'avatar <@')) {
@@ -116,4 +116,4 @@ client.on("message", msg => {
 
 });
 
-client.login("MjkxNzM0OTg5MTAyNTE0MTc4.C6ty5g.P6bhcEBMoN_MRb8cZVKar-obxxg");
+client.login("Bot token");
