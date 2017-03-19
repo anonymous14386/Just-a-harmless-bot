@@ -1,2 +1,2 @@
-# Just-a-harmless-bot-c-
+# Just-a-harmless-bot
 Bot coded in discord.js
