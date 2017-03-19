@@ -14,7 +14,7 @@ client.on("message", msg => {
   if (msg.author.bot) return;
 
   if (msg.content.toLowerCase() === prefix + "help") {
-    msg.reply("\n```Thank you for choosing me! Here is a basic help page:\n\n1. $avatar - Sends your profile pic\n\n2. $command2 - Sends a link to Song 2 by blur\n\n3. $md5 - Sends the md5 hash of a string\n\n4. $define - Sends the urban dictionary definition of a word\n\n5. $geoip - Sends the geographical information for an IP address\n\n6. $btc - Sends the current exchange rate for 1 BTC```");
+    msg.reply("\n```Thank you for choosing me! Here is a basic help page:\n\n1. $avatar - Sends your profile pic\n\n2. $command2 - Sends a link to Song 2 by blur\n\n3. $md5 - Sends the md5 hash of a string\n\n4. $define - Sends the urban dictionary definition of a word\n\n5. $geoip - Sends the geographical information for an IP address\n\n6. $btc - Sends the current exchange rate for 1 BTC\n\n7. $ping - Sends back a pong```");
   }
 
   if (msg.content.toLowerCase().startsWith(prefix + 'avatar <@')) {
@@ -24,26 +24,6 @@ client.on("message", msg => {
 
   if (msg.content.toLowerCase() === prefix + "command2") {
     msg.reply("https://www.youtube.com/watch?v=SSbBvKaM6sk");
-  }
-
-  if (msg.content.toLowerCase() === prefix + "hate") {
-    msg.channel.sendMessage("I hate niggers,\nI hate jews,\nI hate spics,\nAnd arabs too!\nGo ahead and try to sue,\nI got cash up the wazoo.");
-  }
-
-  if (msg.content.toLowerCase().includes("noob")) {
-    msg.channel.sendMessage("I fucking hate noobs.");
-  }
-
-  if (msg.content.toLowerCase().includes("i fucking hate you")) {
-    msg.channel.sendMessage("https://www.youtube.com/watch?v=35rHHEiNaIM");
-  }
-
-  if (msg.content.toLowerCase().includes("kkk")) {
-    msg.channel.sendMessage("Fuck niggers");
-  }
-
-  if (msg.mentions.everyone === true) {
-    msg.reply("I swear if you don't have a good reason for mentioning everyone I will slaughter your family and waterboard you in their blood c:");
   }
 
   if (msg.content.toLowerCase().startsWith(prefix + "md5")) {
@@ -107,7 +87,7 @@ client.on("message", msg => {
     })
   }
 
-  if (msg.content.startsWith(`${prefix}ping`)) {
+  if (msg.content.startsWith(prefix + 'ping')) {
       msg.channel.sendMessage("Pong!")
           .then(message => {
               message.edit(`Pong! \`${message.createdTimestamp - msg.createdTimestamp}ms\``);
