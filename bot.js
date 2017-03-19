@@ -64,8 +64,6 @@ client.on("message", msg => {
 
   if (msg.content.toLowerCase().startsWith(prefix + "btc")) {
 
-    let string = msg.content.slice(5);
-
     request("https://bitaps.com/api/ticker/average", function(error, response, body) {
 
       var now = new Date();
